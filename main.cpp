@@ -16,12 +16,12 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
  
- 
- 
- 
- 
- 
- 
+ int 
+ bool
+ char
+ float
+ double
+ void
  
  
  
@@ -61,9 +61,28 @@ void variableDeclarations()
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
     
+    int myAge = 24;
+    int caloriesConsumed = 2045;
+    int fingersLeft = 9;
+
+    float waterLevel = 32.4f;
+    float circumferenceofTable = 18.36f;
+    float carSpeed = 110.0f;
+
+    double cometTrajectory = 73.23049192;
+    double smallNum = 0.00034021;
+    double d = 0.3829103829;
+
+    char firstInitial = 'W';
+    char midInitial = 'S';
+    char lastInitial = 'B';
+
+    bool loveMe = false;
+    bool isHungry = true;
+    bool isDayTime = false;
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, myAge, caloriesConsumed, fingersLeft, waterLevel, circumferenceofTable, carSpeed, cometTrajectory, smallNum, d, firstInitial, midInitial, lastInitial, loveMe, isHungry, isDayTime); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
