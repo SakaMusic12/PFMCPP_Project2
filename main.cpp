@@ -99,43 +99,82 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+int bakePie(int minutes = 60, int temp = 350)
+{
+    ignoreUnused(minutes, temp);
+    return{};
+}
 /*
  2)
  */
-
+int playChord(int root, int third, int fifth)
+{
+    ignoreUnused(root, third, fifth);
+    return{};
+}
 /*
  3)
  */
-
+bool isSpider(bool venomous, float size, int legs = 8)
+{
+    ignoreUnused(venomous, size, legs);
+    return{};
+}
 /*
  4)
  */
+int moveFilter(int startFreq, int endFreq, float timeInBeats, int slopeInDB = 24)
+{
+    ignoreUnused(startFreq, endFreq, timeInBeats, slopeInDB);
+    return{};
+}
 
 /*
  5)
  */
-
+int reynoldsNum(float flowSpeed, float pipeWidth, float viscosity, float fluidDensity)
+{
+    ignoreUnused(flowSpeed, pipeWidth, viscosity, fluidDensity);
+    return{};
+}
 /*
  6)
  */
-
+bool canRelax(bool homeworkDone, bool dishesClean = true, bool takeTrashOut = false)
+{
+    ignoreUnused(homeworkDone, dishesClean, takeTrashOut);
+    return{};
+}
 /*
  7)
  */
-
+void orderCoffee(int size, bool withCream = true)
+{
+    ignoreUnused(size, withCream);
+}
 /*
  8)
  */
-
+void getInitials(char firstName = 'w', char lastName = 'b')
+{
+    ignoreUnused(firstName, lastName);
+}
 /*
  9)
  */
-
+float getLength(float start = 0.0f, float end = 3.14f)
+{
+    ignoreUnused(start, end);
+    return{};
+}
 /*
  10)
  */
-
+float totalMoney(float savings, float checking = 250.37f, float creditCard = -32.0f)
+{
+    ignoreUnused(savings, checking, creditCard);
+    return{};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -156,27 +195,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto pieBaked = bakePie();
     //2)
-    
+    auto chord = playChord(0, 4, 7);
     //3)
-    
+    auto spider = isSpider(true, 1.3f);
     //4)
-    
+    auto filterPosition = moveFilter(2040, 80, 8, 36);
     //5)
-    
+    auto levelOfTurbulence = reynoldsNum(1.32f, 4.0f, 0.012f, 0.0021f);
     //6)
-    
+    auto chillTime = canRelax(true);
     //7)
-    
+    orderCoffee(2);
     //8)
-    
+    getInitials();
     //9)
-    
+    auto trackLength = getLength(1.43f);
     //10)
+    auto wealth = totalMoney(500.0f);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, pieBaked, chord, spider, filterPosition, levelOfTurbulence, chillTime, orderCoffee, getInitials, trackLength, wealth);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
